@@ -21,7 +21,7 @@ public class Pet {
 	private String type; 
 	
 	@ManyToOne
-	@JoinColumn(name="owner_id")
+	@JoinColumn(name="owner_id", nullable=false)
 	private Owner owner; 
 	
 	@OneToMany(mappedBy = "pet", cascade = CascadeType.ALL)

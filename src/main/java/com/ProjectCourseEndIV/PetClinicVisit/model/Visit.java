@@ -14,13 +14,13 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class Visit {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id; 
 	private LocalDate visitDate; 
 	private String description; 
 	
 	@ManyToOne
-	@JoinColumn(name="pet_id")
+	@JoinColumn(name="pet_id", nullable=false)
 	private Pet pet;
 
 	public Visit(Long id, LocalDate visitDate, String description, Pet pet) {

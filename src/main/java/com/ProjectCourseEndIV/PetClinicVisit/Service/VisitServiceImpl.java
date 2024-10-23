@@ -3,10 +3,12 @@ package com.ProjectCourseEndIV.PetClinicVisit.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ProjectCourseEndIV.PetClinicVisit.Repository.VisitRepository;
 import com.ProjectCourseEndIV.PetClinicVisit.model.Visit;
 
+@Service
 public class VisitServiceImpl implements VisitService {
 	
 	@Autowired

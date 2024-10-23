@@ -3,10 +3,12 @@ package com.ProjectCourseEndIV.PetClinicVisit.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ProjectCourseEndIV.PetClinicVisit.Repository.OwnerRepository;
 import com.ProjectCourseEndIV.PetClinicVisit.model.Owner;
 
+@Service
 public class OwnerServiceImpl implements OwnerService {
 	
 	@Autowired
